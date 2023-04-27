@@ -22,6 +22,7 @@ public class UpscalerTests
     public void MissingDirectory(string inputPath)
     {
         output.WriteLine("Working dir: " + new DirectoryInfo("./").FullName);
+        Assert.Fail($"Why no work");
         Assert.ThrowsAsync<FileNotFoundException>(() => UpscaleProcess.Run(new UpscaleInputArgs(EXEC, inputPath, "./output")));
     }
 
