@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EsrganDotNet\Core.csproj" />
+    <ProjectReference Include="..\EsrganDotNet\RealESRGANDotNet.csproj" />
   </ItemGroup>
 
   <ItemGroup>

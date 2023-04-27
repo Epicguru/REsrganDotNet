@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>RealESRGAN</RootNamespace>
+    <Title>RealESRGANDotNet</Title>
+    <Authors>Epicguru</Authors>
+    <Description>A thin .NET wrapper around the AI image upscaler RealESRGAN.</Description>
+    <RepositoryUrl>https://github.com/Epicguru/REsrganDotNet</RepositoryUrl>
+    <PackageTags>AI upscaler;wrapper;.NET</PackageTags>
+
+    <!-- VERSION -->
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <Version>1.0.0</Version>
+
+  </PropertyGroup>
+
+</Project>
