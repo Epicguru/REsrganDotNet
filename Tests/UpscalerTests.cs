@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using RealESRGAN;
+using System.Diagnostics;
 using Xunit.Abstractions;
 
 
@@ -22,6 +23,7 @@ public class UpscalerTests
     public void MissingDirectory(string inputPath)
     {
         output.WriteLine("Working dir: " + new DirectoryInfo("./").FullName);
+        Process.Start(EXEC).WaitForExit();
         Assert.Fail($"Why no work");
         Assert.ThrowsAsync<FileNotFoundException>(() => UpscaleProcess.Run(new UpscaleInputArgs(EXEC, inputPath, "./output")));
     }
